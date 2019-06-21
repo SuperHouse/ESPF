@@ -7,7 +7,7 @@ a USB-C connection. Provides a 6-pin connection that includes power,
 TX, RX, and the GPIO0 / Reset lines required to put the ESPx into
 programming mode.
 
-![PCB render][ESPROG-v1_0-oblique-render.jpg]
+![PCB render](ESPROG-v1_0-oblique-render.jpg)
 
 You can view more details at:
 
