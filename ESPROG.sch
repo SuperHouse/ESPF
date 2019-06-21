@@ -1744,7 +1744,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <part name="GND5" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="U$5" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
 <part name="J1" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="USB-C" device="" package3d_urn="urn:adsk.eagle:package:7066538/2"/>
-<part name="R18" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="5.1K"/>
+<part name="R6" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="5.1K"/>
 <part name="IC1" library="SuperHouse-ICs" library_urn="urn:adsk.eagle:library:11768868" deviceset="CP2104" device="" package3d_urn="urn:adsk.eagle:package:7066298/2"/>
 <part name="GND1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="VR1" library="SuperHouse-Regulators" library_urn="urn:adsk.eagle:library:11786698" deviceset="AP2112K" device="SOT25" package3d_urn="urn:adsk.eagle:package:7066291/2"/>
@@ -1767,7 +1767,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <part name="GND6" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="R4" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
 <part name="R5" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
-<part name="Q3" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="TRANS_NPN_DUAL" device="-MMDT3904" package3d_urn="urn:adsk.eagle:package:11799616/2" value="MMDT3904"/>
+<part name="Q1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="TRANS_NPN_DUAL" device="-MMDT3904" package3d_urn="urn:adsk.eagle:package:11799616/2" value="MMDT3904"/>
 <part name="C2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="CAP" device="0603" package3d_urn="urn:adsk.eagle:package:7066315/6" value="1uF"/>
 <part name="GND7" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="F1" library="SuperHouse-Fuses" library_urn="urn:adsk.eagle:library:11769263" deviceset="PTC" device="" package3d_urn="urn:adsk.eagle:package:11769373/4" technology="050" value="500mA 1812 PTC"/>
@@ -1841,7 +1841,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <attribute name="NAME" x="30.48" y="119.38" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="R18" gate="G$1" x="12.7" y="93.98" smashed="yes" rot="R90">
+<instance part="R6" gate="G$1" x="12.7" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.2014" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="16.002" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -1921,11 +1921,11 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <attribute name="NAME" x="182.88" y="95.4786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="182.88" y="90.678" size="1.778" layer="96"/>
 </instance>
-<instance part="Q3" gate="Q1" x="193.04" y="111.76" smashed="yes">
+<instance part="Q1" gate="Q1" x="193.04" y="111.76" smashed="yes">
 <attribute name="NAME" x="189.23" y="115.57" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="187.96" y="106.934" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="Q3" gate="Q2" x="193.04" y="93.98" smashed="yes" rot="MR180">
+<instance part="Q1" gate="Q2" x="193.04" y="93.98" smashed="yes" rot="MR180">
 <attribute name="NAME" x="189.23" y="97.79" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="187.96" y="89.154" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -2024,7 +2024,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <junction x="17.78" y="127"/>
 <junction x="27.94" y="88.9"/>
 <wire x1="27.94" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="17.78" y="88.9"/>
 <wire x1="76.2" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
@@ -2132,7 +2132,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <pinref part="J1" gate="G$1" pin="CC2"/>
 <wire x1="12.7" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="99.06" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <junction x="12.7" y="99.06"/>
 </segment>
 </net>
@@ -2244,7 +2244,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </net>
 <net name="EN" class="0">
 <segment>
-<pinref part="Q3" gate="Q1" pin="C"/>
+<pinref part="Q1" gate="Q1" pin="C"/>
 <wire x1="195.58" y1="116.84" x2="195.58" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="119.38" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
@@ -2252,7 +2252,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </net>
 <net name="GPIO0" class="0">
 <segment>
-<pinref part="Q3" gate="Q2" pin="C"/>
+<pinref part="Q1" gate="Q2" pin="C"/>
 <wire x1="195.58" y1="88.9" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="86.36" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
@@ -2262,13 +2262,13 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="Q3" gate="Q1" pin="B"/>
+<pinref part="Q1" gate="Q1" pin="B"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="Q3" gate="Q2" pin="B"/>
+<pinref part="Q1" gate="Q2" pin="B"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -2280,7 +2280,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <junction x="177.8" y="111.76"/>
 <wire x1="177.8" y1="104.14" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="101.6" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="Q2" pin="E"/>
+<pinref part="Q1" gate="Q2" pin="E"/>
 <wire x1="195.58" y1="101.6" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="111.76" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DTR"/>
@@ -2295,7 +2295,7 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 <junction x="177.8" y="93.98"/>
 <wire x1="177.8" y1="101.6" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="Q1" pin="E"/>
+<pinref part="Q1" gate="Q1" pin="E"/>
 <wire x1="195.58" y1="104.14" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="93.98" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="93.98" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
