@@ -188,7 +188,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:JRhuqjVVQYGVJWU_nUPDkg" pcbguid="1861c335-d300-48f5-8c70-4f9e2e15e8c2" lastpulledtime="2019-07-04T13:34:18Z" lastsyncedchangeguid="8f27d1c3-c2be-d358-18db-d89d43a70d9e" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="43a69020-5b43-1b9d-a79c-150dd919ba6a" lastpushedtime="2020-05-25T10:04:08Z" linktopcb3d="%12"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:swBH170zRHaojB2h5Vblyg" pcbguid="65d1a610-0e94-4f7e-955b-cbe41dc31425" lastpulledtime="" lastsyncedchangeguid="8f27d1c3-c2be-d358-18db-d89d43a70d9e" latestrevisionid="fcdf8aa0-1bba-404e-aedf-1c9e20859707" lastsyncedrevisionid="fcdf8aa0-1bba-404e-aedf-1c9e20859707" lastboardhashguid="c79eb5d4-1c34-d8a5-41d2-598309a68487" lastpushedtime="2020-05-26T02:52:23Z" linktopcb3d="%12"/>
 <plain>
 <text x="10.25" y="18.55" size="1.2" layer="21" font="vector" ratio="18">superhouse.tv/espf</text>
 <text x="8.5" y="2.1636" size="1.2" layer="22" font="vector" ratio="15" rot="MR0">v3.0</text>
@@ -658,9 +658,9 @@ Free for use for any purpose.</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="HDRRA6W64P254_1X6_1524X254X556C" urn="urn:adsk.eagle:package:20465662/5" type="model" library_version="37">
-<description>Single-row, 6-pin Pin Header (Male) Right Angle, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 15.24 X 2.54 X 5.56 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with body size 15.24 X 2.54 X 5.56 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package3d name="HDRRA6W64P254_1X6_1524X254X254C" urn="urn:adsk.eagle:package:20465662/6" type="model" library_version="43">
+<description>Single-row, 6-pin Pin Header (Male) Right Angle, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 15.24 X 2.54 X 2.54 mm body
+&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with body size 15.24 X 2.54 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="1X6-2.54-PINS-RA"/>
 </packageinstances>
@@ -937,7 +937,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 </element>
 <element name="FID1" library="freetronics" package="FIDUCIAL-1X2.5" value="FIDUCIAL1X2.5" x="2.5" y="8.5" smashed="yes"/>
 <element name="FID2" library="freetronics" package="FIDUCIAL-1X2.5" value="FIDUCIAL1X2.5" x="21" y="16.5" smashed="yes"/>
-<element name="J3" library="SuperHouse-ESP-Prog" library_urn="urn:adsk.eagle:library:14353672" package="1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/5" value="ESP-PROG-1X6-2.54-PINS-RA" x="20.7" y="1.6" smashed="yes">
+<element name="J3" library="SuperHouse-ESP-Prog" library_urn="urn:adsk.eagle:library:14353672" package="1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/6" value="ESP-PROG-1X6-2.54-PINS-RA" x="20.7" y="1.6" smashed="yes">
 <attribute name="NAME" x="20.7" y="3.4288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="J2" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="USB-C-16P" package3d_urn="urn:adsk.eagle:package:17045956/2" value="USB-C-16P-16P" x="2" y="10" smashed="yes" rot="R270">

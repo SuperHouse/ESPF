@@ -2041,6 +2041,93 @@ Free for use for any purpose.</description>
 <rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 </package>
+<package name="1X6-2.54-SOCKET-RA" urn="urn:adsk.eagle:footprint:20479882/1" library_version="43">
+<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="7.62" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-0.635" width="0.6096" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="-1.27" width="0.6096" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-1.27" width="0.6096" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.6096" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.6096" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="7.62" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1" shape="octagon"/>
+<pad name="2" x="-3.81" y="0" drill="1"/>
+<pad name="3" x="-1.27" y="0" drill="1"/>
+<pad name="4" x="1.27" y="0" drill="1"/>
+<pad name="5" x="3.81" y="0" drill="1"/>
+<pad name="6" x="6.35" y="0" drill="1"/>
+<text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+</package>
+<package name="1X6-1.27-PINS-RA" urn="urn:adsk.eagle:footprint:20496567/1" library_version="43">
+<description>ESP-Prog Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no right angle pin header</description>
+<pad name="1" x="-3.175" y="0" drill="0.7" diameter="1.016" shape="octagon"/>
+<pad name="2" x="-1.905" y="0" drill="0.7" diameter="1.016"/>
+<pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
+<pad name="4" x="0.635" y="0" drill="0.7" diameter="1.016"/>
+<pad name="5" x="1.905" y="0" drill="0.7" diameter="1.016"/>
+<pad name="6" x="3.175" y="0" drill="0.7" diameter="1.016"/>
+<text x="0" y="1" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.016" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
+<rectangle x1="1.651" y1="-0.254" x2="2.159" y2="0.254" layer="51"/>
+<rectangle x1="0.381" y1="-0.254" x2="0.889" y2="0.254" layer="51"/>
+<rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
+<rectangle x1="-2.159" y1="-0.254" x2="-1.651" y2="0.254" layer="51"/>
+<rectangle x1="-3.429" y1="-0.254" x2="-2.921" y2="0.254" layer="51"/>
+<rectangle x1="2.921" y1="-0.254" x2="3.429" y2="0.254" layer="51"/>
+<wire x1="-3.81" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.3175" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.3175" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.67" x2="-3.81" y2="0.67" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.67" x2="-3.81" y2="-0.67" width="0.2032" layer="21"/>
+<wire x1="-3.845" y1="-0.635" x2="-3.845" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.2225" y1="0.635" x2="-1.5875" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-0.9525" y1="0.635" x2="-0.3175" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.635" x2="0.9525" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="0.635" x2="2.2225" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.8575" y1="0.635" x2="3.4925" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="0.635" x2="-1.27" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.635" x2="0" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="0.9525" y1="0.635" x2="1.27" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="0.635" x2="2.54" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="3.4925" y1="0.635" x2="3.81" y2="0.3175" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.3175" x2="-2.2225" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.3175" x2="-0.9525" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="0.3175" x2="0.3175" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0.3175" x2="1.5875" y2="0.635" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.3175" x2="2.8575" y2="0.635" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="HDRVR6W64P254_1X6_1524X254X860C" urn="urn:adsk.eagle:package:12469082/7" type="model" library_version="34">
@@ -2106,11 +2193,25 @@ Free for use for any purpose.</description>
 <packageinstance name="2X3-1.27-SHROUDED"/>
 </packageinstances>
 </package3d>
-<package3d name="HDRRA6W64P254_1X6_1524X254X556C" urn="urn:adsk.eagle:package:20465662/5" type="model" library_version="37">
-<description>Single-row, 6-pin Pin Header (Male) Right Angle, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 15.24 X 2.54 X 5.56 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with body size 15.24 X 2.54 X 5.56 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package3d name="HDRRA6W64P254_1X6_1524X254X254C" urn="urn:adsk.eagle:package:20465662/6" type="model" library_version="43">
+<description>Single-row, 6-pin Pin Header (Male) Right Angle, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 15.24 X 2.54 X 2.54 mm body
+&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with body size 15.24 X 2.54 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="1X6-2.54-PINS-RA"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRRAR6W64P254_1X6_1524X736X278C" urn="urn:adsk.eagle:package:20479883/2" type="model" library_version="43">
+<description>Single-row, 6-pin Receptacle Header (Female) Right Angle, 2.54 mm (0.10 in) col pitch, 7.36 mm insulator length, 15.24 X 7.36 X 2.78 mm body
+&lt;p&gt;Single-row (1X6), 6-pin Receptacle Header (Female) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 7.36 mm insulator length with body size 15.24 X 7.36 X 2.78 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="1X6-2.54-SOCKET-RA"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRRA6W40P127_1X6_762X100X140C" urn="urn:adsk.eagle:package:20496568/2" type="model" library_version="43">
+<description>Single-row, 6-pin Pin Header (Male) Right Angle, 1.27 mm (0.05 in) col pitch, 3.70 mm mating length, 7.62 X 1.00 X 1.40 mm body
+&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 1.27 mm (0.05 in) col pitch, 0.40 mm lead width, 3.00 mm tail length and 3.70 mm mating length with body size 7.62 X 1.00 X 1.40 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="1X6-1.27-PINS-RA"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2152,7 +2253,7 @@ Free for use for any purpose.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP-PROG" urn="urn:adsk.eagle:component:14353676/20" prefix="J" library_version="37">
+<deviceset name="ESP-PROG" urn="urn:adsk.eagle:component:14353676/24" prefix="J" library_version="43">
 <description>&lt;b&gt;ESP-Prog&lt;/b&gt;&lt;br&gt;
 ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x6 and 2x3 formats, in 2.54mm (0.1") and 1.27mm (0.05") pitch.</description>
 <gates>
@@ -2329,7 +2430,39 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 <connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20465662/5"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20465662/6"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1X6-2.54-SOCKET-RA" package="1X6-2.54-SOCKET-RA">
+<connects>
+<connect gate="G$1" pin="CH_EN" pad="5"/>
+<connect gate="G$1" pin="ESP_RX" pad="3"/>
+<connect gate="G$1" pin="ESP_TX" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="GPIO0" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20479883/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1X6-1.27-PINS-RA" package="1X6-1.27-PINS-RA">
+<connects>
+<connect gate="G$1" pin="CH_EN" pad="5"/>
+<connect gate="G$1" pin="ESP_RX" pad="3"/>
+<connect gate="G$1" pin="ESP_TX" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="GPIO0" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20496568/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2385,7 +2518,7 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 <part name="GND8" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="FID1" library="freetronics" deviceset="FIDUCIAL" device="1X2.5"/>
 <part name="FID2" library="freetronics" deviceset="FIDUCIAL" device="1X2.5"/>
-<part name="J3" library="SuperHouse-ESP-Prog" library_urn="urn:adsk.eagle:library:14353672" deviceset="ESP-PROG" device="-1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/5"/>
+<part name="J3" library="SuperHouse-ESP-Prog" library_urn="urn:adsk.eagle:library:14353672" deviceset="ESP-PROG" device="-1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/6"/>
 <part name="P+1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="GND9" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="J2" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="USB-C-16P" device="-16P" package3d_urn="urn:adsk.eagle:package:17045956/2"/>
