@@ -1,41 +1,42 @@
 ESPFlasher ESP8266 / ESP32 Programmer
 ======================================
-Copyright 2019-2020 SuperHouse Automation Pty Ltd  www.superhouse.tv  
 
 Serial programming adapter for the Espressif ESP8266 and ESP32 with
 a USB-C connection. Provides a 6-pin connection that includes power,
 TX, RX, and the GPIO0 / Reset lines required to put the ESPx into
 programming mode.
 
-![PCB render](ESPF-v3_0-oblique-render.jpg)
+![ESP Flasher PCB render](Images/ESPF-v3_0-oblique-render.jpg)
+
+The pinout is compatible with the "ESPFlash" header convention designed
+by Jonathan Oxer.
+
+Features:
+
+ * USB-C interface for connection to host.
+ * ESPFlash 1x6 0.1" header for connection to target board.
+ * CP2012N USB-to-serial converter.
+ * TX/RX LEDs.
+ * 600mA 3.3V voltage regulator to power target board.
 
 You can view more details at:
 
   http://www.superhouse.tv/espf
 
 
-INSTALLATION
-------------
-The design is saved as an EAGLE project. EAGLE PCB design software is
-available from www.cadsoftusa.com free for non-commercial use. To use
-this project download it and place the directory containing these files
-into the "eagle" directory on your computer. Then open EAGLE and
-navigate to the project.
-
-
-CREDITS
+Credits
 -------
-Jonathan Oxer jon@oxer.com.au
+ * Jonathan Oxer <jon@oxer.com.au>
 
 
-DISTRIBUTION
-------------
-The specific terms of distribution of this project are governed by the
-license referenced below.
-
-
-LICENSE
+License
 -------
-Licensed under the TAPR Open Hardware License (www.tapr.org/OHL).
-The "license" folder within this repository also contains a copy of
-this license in plain text format.
+Copyright 2019-2020 Superhouse Automation Pty Ltd www.superhouse.tv
+
+The hardware portion of this project is licensed under the TAPR Open
+Hardware License (www.tapr.org/OHL). The "license" folder within this
+repository also contains a copy of this license in plain text format.
+
+The software portion of this project is licensed under the Simplified
+BSD License. The "licence" folder within this project contains a capy
+of this license in plain text format.
