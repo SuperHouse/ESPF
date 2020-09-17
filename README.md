@@ -15,7 +15,7 @@ Features:
 
  * USB-C interface for connection to host.
  * ESPFlash 1x6 0.1" header for connection to target board.
- * CP2012N USB-to-serial converter.
+ * CP2102N USB-to-serial converter.
  * TX/RX LEDs.
  * 600mA 3.3V voltage regulator to power target board.
 
@@ -38,5 +38,5 @@ Hardware License (www.tapr.org/OHL). The "license" folder within this
 repository also contains a copy of this license in plain text format.
 
 The software portion of this project is licensed under the Simplified
-BSD License. The "licence" folder within this project contains a capy
+BSD License. The "licence" folder within this project contains a copy
 of this license in plain text format.
