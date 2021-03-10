@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1534,470 +1534,15 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="freetronics">
-<packages>
-<package name="FIDUCIAL-1.5X3">
-<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
-<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="FIDUCIAL-1X2">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="FIDUCIAL-1X2.5">
-<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FIDUCIAL">
-<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FIDUCIAL">
-<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
-Various fiducial points for machine vision alignment.</description>
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1.5X3" package="FIDUCIAL-1.5X3">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1X2" package="FIDUCIAL-1X2">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1X2.5" package="FIDUCIAL-1X2.5">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SuperHouse-ESP-Prog" urn="urn:adsk.eagle:library:14353672">
-<description>ESP8266, ESP8285, and ESP32 programming and JTAG headers.&lt;br&gt;
-Created by Jonathan Oxer &lt;jon@oxer.com.au&gt; for SuperHouse Automation Pty Ltd.&lt;br&gt;
-Shrouded headers were designed in Fusion 360. Pin headers were generated in Eagle.&lt;br&gt;
+<library name="SuperHouse-ESPFlash" urn="urn:adsk.eagle:library:23117902">
+<description>ESP8266, ESP8285, and ESP32 programming and JTAG headers. 
+See https://www.superhouse.tv/espflash for more information. 
+Created by Jonathan Oxer for SuperHouse Automation Pty Ltd. 
+Shrouded headers were designed in Fusion 360. Pin headers were generated in Eagle. 
 Free for use for any purpose.</description>
 <packages>
-<package name="1X6-2.54-SOCKET" urn="urn:adsk.eagle:footprint:12469081/5" library_version="68">
-<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with socket</description>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.6096" layer="21"/>
-<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-1.27" width="0.6096" layer="21"/>
-<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.6096" layer="21"/>
-<wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.6096" layer="21"/>
-<pad name="1" x="-6.35" y="0" drill="1" shape="octagon"/>
-<pad name="2" x="-3.81" y="0" drill="1"/>
-<pad name="3" x="-1.27" y="0" drill="1"/>
-<pad name="4" x="1.27" y="0" drill="1"/>
-<pad name="5" x="3.81" y="0" drill="1"/>
-<pad name="6" x="6.35" y="0" drill="1"/>
-<text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-</package>
-<package name="1X6-2.54-PLAIN" urn="urn:adsk.eagle:footprint:14353673/5" library_version="34">
-<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with no header</description>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.6096" layer="21"/>
-<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-1.27" width="0.6096" layer="21"/>
-<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.6096" layer="21"/>
-<wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.6096" layer="21"/>
-<pad name="1" x="-6.35" y="0" drill="1" shape="octagon"/>
-<pad name="2" x="-3.81" y="0" drill="1"/>
-<pad name="3" x="-1.27" y="0" drill="1"/>
-<pad name="4" x="1.27" y="0" drill="1"/>
-<pad name="5" x="3.81" y="0" drill="1"/>
-<pad name="6" x="6.35" y="0" drill="1"/>
-<text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-</package>
-<package name="2X3-2.54-SHROUDED" urn="urn:adsk.eagle:footprint:13425425/4" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 2.54mm format, 1mm holes with shrouded header</description>
-<wire x1="-3.175" y1="-2.775" x2="-1.905" y2="-2.775" width="0.2032" layer="21"/>
-<wire x1="-7.56" y1="4.5" x2="7.56" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="7.56" y1="-4.5" x2="2.2" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="-4.5" x2="-2.2" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="-4.5" x2="-7.56" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-7.56" y1="-4.5" x2="-7.56" y2="4.4" width="0.2032" layer="21"/>
-<wire x1="7.56" y1="4.5" x2="7.56" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-6.46" y1="-3.4" x2="-6.46" y2="3.4" width="0.2032" layer="51"/>
-<wire x1="-6.46" y1="3.4" x2="6.46" y2="3.4" width="0.2032" layer="51"/>
-<wire x1="6.46" y1="-3.4" x2="6.46" y2="3.4" width="0.2032" layer="51"/>
-<wire x1="-2.2" y1="-4.5" x2="-2.2" y2="-3" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="-3" x2="2.2" y2="-3" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="-3" x2="2.2" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-6.46" y1="-3.4" x2="-2.2" y2="-3.4" width="0.2032" layer="51"/>
-<wire x1="6.46" y1="-3.4" x2="2.2" y2="-3.4" width="0.2032" layer="51"/>
-<pad name="1" x="-2.54" y="-1.27" drill="1" shape="octagon"/>
-<pad name="2" x="-2.54" y="1.27" drill="1"/>
-<pad name="3" x="0" y="-1.27" drill="1"/>
-<pad name="4" x="0" y="1.27" drill="1"/>
-<pad name="5" x="2.54" y="-1.27" drill="1"/>
-<pad name="6" x="2.54" y="1.27" drill="1"/>
-<text x="0" y="-5" size="1.27" layer="27" font="vector" align="top-center">ESP-Prog</text>
-<text x="0" y="4.9" size="1.27" layer="104" font="vector" rot="R180" align="top-center">&gt;NAME</text>
-<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
-<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
-<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
-<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
-<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
-<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
-</package>
-<package name="2X3-2.54-PLAIN" urn="urn:adsk.eagle:footprint:12408515/3" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 2.54mm format, 1mm holes with no header</description>
-<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="2.032" x2="-3.81" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="-3.81" y1="-2.032" x2="-3.302" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="-3.302" y1="-2.54" x2="-1.778" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="-1.778" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="-2.032" x2="-1.27" y2="2.032" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="2.032" x2="-1.778" y2="2.54" width="0.254" layer="51"/>
-<wire x1="-1.778" y1="2.54" x2="-3.302" y2="2.54" width="0.254" layer="51"/>
-<wire x1="-3.302" y1="2.54" x2="-3.81" y2="2.032" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="2.032" x2="-0.762" y2="2.54" width="0.254" layer="51"/>
-<wire x1="-0.762" y1="2.54" x2="0.762" y2="2.54" width="0.254" layer="51"/>
-<wire x1="0.762" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
-<wire x1="1.27" y1="2.032" x2="1.27" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="1.27" y1="-2.032" x2="0.762" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="0.762" y1="-2.54" x2="-0.762" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="-0.762" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="1.27" y1="-2.032" x2="1.778" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="1.778" y1="-2.54" x2="3.302" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="3.302" y1="-2.54" x2="3.81" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="3.81" y1="-2.032" x2="3.81" y2="2.032" width="0.254" layer="51"/>
-<wire x1="3.81" y1="2.032" x2="3.302" y2="2.54" width="0.254" layer="51"/>
-<wire x1="3.302" y1="2.54" x2="1.778" y2="2.54" width="0.254" layer="51"/>
-<wire x1="1.778" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
-<pad name="1" x="-2.54" y="-1.27" drill="1" shape="octagon"/>
-<pad name="2" x="-2.54" y="1.27" drill="1"/>
-<pad name="3" x="0" y="-1.27" drill="1"/>
-<pad name="4" x="0" y="1.27" drill="1"/>
-<pad name="5" x="2.54" y="-1.27" drill="1"/>
-<pad name="6" x="2.54" y="1.27" drill="1"/>
-<text x="0" y="3" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.9" size="1.27" layer="27" font="vector" align="top-center">ESP-Prog</text>
-<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
-<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
-<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
-<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
-<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
-<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
-<circle x="-3.81" y="-2.286" radius="0.254" width="0.4064" layer="51"/>
-</package>
-<package name="2X3-2.54-PINS" urn="urn:adsk.eagle:footprint:14369947/1" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 2.54mm format, 1mm holes with pin header</description>
-<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="2.032" x2="-3.81" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="-3.81" y1="-2.032" x2="-3.302" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="-3.302" y1="-2.54" x2="-1.778" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="-1.778" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="-2.032" x2="-1.27" y2="2.032" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="2.032" x2="-1.778" y2="2.54" width="0.254" layer="51"/>
-<wire x1="-1.778" y1="2.54" x2="-3.302" y2="2.54" width="0.254" layer="51"/>
-<wire x1="-3.302" y1="2.54" x2="-3.81" y2="2.032" width="0.254" layer="51"/>
-<wire x1="-1.27" y1="2.032" x2="-0.762" y2="2.54" width="0.254" layer="51"/>
-<wire x1="-0.762" y1="2.54" x2="0.762" y2="2.54" width="0.254" layer="51"/>
-<wire x1="0.762" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
-<wire x1="1.27" y1="2.032" x2="1.27" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="1.27" y1="-2.032" x2="0.762" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="0.762" y1="-2.54" x2="-0.762" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="-0.762" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="1.27" y1="-2.032" x2="1.778" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="1.778" y1="-2.54" x2="3.302" y2="-2.54" width="0.254" layer="51"/>
-<wire x1="3.302" y1="-2.54" x2="3.81" y2="-2.032" width="0.254" layer="51"/>
-<wire x1="3.81" y1="-2.032" x2="3.81" y2="2.032" width="0.254" layer="51"/>
-<wire x1="3.81" y1="2.032" x2="3.302" y2="2.54" width="0.254" layer="51"/>
-<wire x1="3.302" y1="2.54" x2="1.778" y2="2.54" width="0.254" layer="51"/>
-<wire x1="1.778" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
-<pad name="1" x="-2.54" y="-1.27" drill="1" shape="octagon"/>
-<pad name="2" x="-2.54" y="1.27" drill="1"/>
-<pad name="3" x="0" y="-1.27" drill="1"/>
-<pad name="4" x="0" y="1.27" drill="1"/>
-<pad name="5" x="2.54" y="-1.27" drill="1"/>
-<pad name="6" x="2.54" y="1.27" drill="1"/>
-<text x="0" y="3" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.9" size="1.27" layer="27" font="vector" align="top-center">ESP-Prog</text>
-<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
-<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
-<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
-<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
-<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
-<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
-<circle x="-3.81" y="-2.286" radius="0.254" width="0.4064" layer="51"/>
-</package>
-<package name="1X6-1.27-PLAIN" urn="urn:adsk.eagle:footprint:14376550/4" library_version="34">
-<description>ESP-Prog Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no header</description>
-<pad name="1" x="-3.175" y="0" drill="0.7" diameter="1.016" shape="octagon"/>
-<pad name="2" x="-1.905" y="0" drill="0.7" diameter="1.016"/>
-<pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
-<pad name="4" x="0.635" y="0" drill="0.7" diameter="1.016"/>
-<pad name="5" x="1.905" y="0" drill="0.7" diameter="1.016"/>
-<pad name="6" x="3.175" y="0" drill="0.7" diameter="1.016"/>
-<text x="0" y="1" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="1.016" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
-<rectangle x1="1.651" y1="-0.254" x2="2.159" y2="0.254" layer="51"/>
-<rectangle x1="0.381" y1="-0.254" x2="0.889" y2="0.254" layer="51"/>
-<rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
-<rectangle x1="-2.159" y1="-0.254" x2="-1.651" y2="0.254" layer="51"/>
-<rectangle x1="-3.429" y1="-0.254" x2="-2.921" y2="0.254" layer="51"/>
-<rectangle x1="2.921" y1="-0.254" x2="3.429" y2="0.254" layer="51"/>
-<wire x1="-3.81" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="3.81" y2="0.635" width="0.127" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.67" x2="-3.81" y2="0.67" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.67" x2="-3.81" y2="-0.67" width="0.2032" layer="21"/>
-<wire x1="-3.845" y1="-0.635" x2="-3.845" y2="0.635" width="0.2032" layer="21"/>
-</package>
-<package name="1X6-1.27-SOCKET" urn="urn:adsk.eagle:footprint:14376549/4" library_version="34">
-<description>ESP-Prog Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with socket</description>
-<pad name="1" x="-3.175" y="0" drill="0.7" diameter="1.016" shape="octagon"/>
-<pad name="2" x="-1.905" y="0" drill="0.7" diameter="1.016"/>
-<pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
-<pad name="4" x="0.635" y="0" drill="0.7" diameter="1.016"/>
-<pad name="5" x="1.905" y="0" drill="0.7" diameter="1.016"/>
-<pad name="6" x="3.175" y="0" drill="0.7" diameter="1.016"/>
-<text x="0" y="1" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="1.016" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
-<rectangle x1="1.651" y1="-0.254" x2="2.159" y2="0.254" layer="51"/>
-<rectangle x1="0.381" y1="-0.254" x2="0.889" y2="0.254" layer="51"/>
-<rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
-<rectangle x1="-2.159" y1="-0.254" x2="-1.651" y2="0.254" layer="51"/>
-<rectangle x1="-3.429" y1="-0.254" x2="-2.921" y2="0.254" layer="51"/>
-<rectangle x1="2.921" y1="-0.254" x2="3.429" y2="0.254" layer="51"/>
-<wire x1="-3.81" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="3.81" y2="0.635" width="0.127" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.67" x2="-3.81" y2="0.67" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.67" x2="-3.81" y2="-0.67" width="0.2032" layer="21"/>
-<wire x1="-3.845" y1="-0.635" x2="-3.845" y2="0.635" width="0.2032" layer="21"/>
-</package>
-<package name="2X3-1.27-PINS" urn="urn:adsk.eagle:footprint:14377572/2" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with pin header</description>
-<pad name="1" x="-1.27" y="-0.635" drill="0.7" diameter="1.016" shape="octagon"/>
-<pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.016"/>
-<pad name="3" x="0" y="-0.635" drill="0.7" diameter="1.016"/>
-<pad name="4" x="0" y="0.635" drill="0.7" diameter="1.016"/>
-<pad name="5" x="1.27" y="-0.635" drill="0.7" diameter="1.016"/>
-<pad name="6" x="1.27" y="0.635" drill="0.7" diameter="1.016"/>
-<text x="0" y="1.5" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.5" size="1.27" layer="27" font="vector" align="top-center">ESP-Prog</text>
-<rectangle x1="-1.524" y1="0.381" x2="-1.016" y2="0.889" layer="51"/>
-<rectangle x1="-0.254" y1="0.381" x2="0.254" y2="0.889" layer="51"/>
-<rectangle x1="-0.254" y1="-0.889" x2="0.254" y2="-0.381" layer="51"/>
-<rectangle x1="1.016" y1="0.381" x2="1.524" y2="0.889" layer="51"/>
-<rectangle x1="1.016" y1="-0.889" x2="1.524" y2="-0.381" layer="51"/>
-<circle x="-1.27" y="-0.635" radius="0.254" width="0.4064" layer="51"/>
-<wire x1="-1.905" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-</package>
-<package name="2X3-1.27-PLAIN" urn="urn:adsk.eagle:footprint:14377919/1" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with no header</description>
-<pad name="1" x="-1.27" y="-0.635" drill="0.7" diameter="1.016" shape="octagon"/>
-<pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.016"/>
-<pad name="3" x="0" y="-0.635" drill="0.7" diameter="1.016"/>
-<pad name="4" x="0" y="0.635" drill="0.7" diameter="1.016"/>
-<pad name="5" x="1.27" y="-0.635" drill="0.7" diameter="1.016"/>
-<pad name="6" x="1.27" y="0.635" drill="0.7" diameter="1.016"/>
-<text x="0" y="1.5" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.5" size="1.27" layer="27" font="vector" align="top-center">ESP-Prog</text>
-<rectangle x1="-1.524" y1="0.381" x2="-1.016" y2="0.889" layer="51"/>
-<rectangle x1="-0.254" y1="0.381" x2="0.254" y2="0.889" layer="51"/>
-<rectangle x1="-0.254" y1="-0.889" x2="0.254" y2="-0.381" layer="51"/>
-<rectangle x1="1.016" y1="0.381" x2="1.524" y2="0.889" layer="51"/>
-<rectangle x1="1.016" y1="-0.889" x2="1.524" y2="-0.381" layer="51"/>
-<circle x="-1.27" y="-0.635" radius="0.254" width="0.4064" layer="51"/>
-<wire x1="-1.905" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-</package>
-<package name="2X3-1.27-SHROUDED" urn="urn:adsk.eagle:footprint:14377918/1" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with shrouded header</description>
-<wire x1="-1.905" y1="-1.505" x2="-0.635" y2="-1.505" width="0.2032" layer="21"/>
-<wire x1="-5.005" y1="2.5" x2="5.005" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="5.005" y1="-2.5" x2="2.2" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="-2.5" x2="-2.2" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="-2.5" x2="-5.005" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-5.005" y1="-2.5" x2="-5.005" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="5.005" y1="2.5" x2="5.005" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-4.555" y1="-1.7" x2="-4.555" y2="1.7" width="0.2032" layer="51"/>
-<wire x1="-4.555" y1="1.7" x2="4.555" y2="1.7" width="0.2032" layer="51"/>
-<wire x1="4.555" y1="-1.7" x2="4.555" y2="1.7" width="0.2032" layer="51"/>
-<wire x1="-2.2" y1="-2.5" x2="-2.2" y2="-1.73" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="-1.73" x2="2.2" y2="-1.73" width="0.2032" layer="21"/>
-<wire x1="2.2" y1="-1.73" x2="2.2" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-4.555" y1="-1.7" x2="-2.2" y2="-1.7" width="0.2032" layer="51"/>
-<wire x1="4.555" y1="-1.7" x2="2.2" y2="-1.7" width="0.2032" layer="51"/>
-<pad name="1" x="-1.27" y="-0.635" drill="0.7" diameter="1.016" shape="octagon"/>
-<pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.016"/>
-<pad name="3" x="0" y="-0.635" drill="0.7" diameter="1.016"/>
-<pad name="4" x="0" y="0.635" drill="0.7" diameter="1.016"/>
-<pad name="5" x="1.27" y="-0.635" drill="0.7" diameter="1.016"/>
-<pad name="6" x="1.27" y="0.635" drill="0.7" diameter="1.016"/>
-<text x="0" y="-2.7" size="1.27" layer="27" font="vector" align="top-center">ESP-Prog</text>
-<text x="0" y="2.7" size="1.27" layer="104" font="vector" rot="R180" align="top-center">&gt;NAME</text>
-<rectangle x1="-1.524" y1="-0.889" x2="-1.016" y2="-0.381" layer="51"/>
-<rectangle x1="-1.524" y1="0.381" x2="-1.016" y2="0.889" layer="51"/>
-<rectangle x1="-0.254" y1="0.381" x2="0.254" y2="0.889" layer="51"/>
-<rectangle x1="-0.254" y1="-0.889" x2="0.254" y2="-0.381" layer="51"/>
-<rectangle x1="1.016" y1="0.381" x2="1.524" y2="0.889" layer="51"/>
-<rectangle x1="1.016" y1="-0.889" x2="1.524" y2="-0.381" layer="51"/>
-</package>
-<package name="1X6-2.54-PINS-RA" urn="urn:adsk.eagle:footprint:20465656/3" library_version="37">
-<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
+<package name="1X6-2.54-PINS-RA" urn="urn:adsk.eagle:footprint:20465656/4" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
 <wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
@@ -2033,7 +1578,7 @@ Free for use for any purpose.</description>
 <pad name="5" x="3.81" y="0" drill="1"/>
 <pad name="6" x="6.35" y="0" drill="1"/>
 <text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
@@ -2041,7 +1586,423 @@ Free for use for any purpose.</description>
 <rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 </package>
-<package name="1X6-2.54-SOCKET-RA" urn="urn:adsk.eagle:footprint:20479882/1" library_version="43">
+<package name="1X6-2.54-SOCKET" urn="urn:adsk.eagle:footprint:12469081/6" library_version="68">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with socket</description>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.6096" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-1.27" width="0.6096" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.6096" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.6096" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1" shape="octagon"/>
+<pad name="2" x="-3.81" y="0" drill="1"/>
+<pad name="3" x="-1.27" y="0" drill="1"/>
+<pad name="4" x="1.27" y="0" drill="1"/>
+<pad name="5" x="3.81" y="0" drill="1"/>
+<pad name="6" x="6.35" y="0" drill="1"/>
+<text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+</package>
+<package name="1X6-2.54-PLAIN" urn="urn:adsk.eagle:footprint:14353673/6" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with no header</description>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.6096" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="-1.27" width="0.6096" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.6096" layer="21"/>
+<wire x1="-7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.6096" layer="21"/>
+<pad name="1" x="-6.35" y="0" drill="1" shape="octagon"/>
+<pad name="2" x="-3.81" y="0" drill="1"/>
+<pad name="3" x="-1.27" y="0" drill="1"/>
+<pad name="4" x="1.27" y="0" drill="1"/>
+<pad name="5" x="3.81" y="0" drill="1"/>
+<pad name="6" x="6.35" y="0" drill="1"/>
+<text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+</package>
+<package name="2X3-2.54-SHROUDED" urn="urn:adsk.eagle:footprint:13425425/6" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 2.54mm format, 1mm holes with shrouded header</description>
+<wire x1="-3.175" y1="-2.775" x2="-1.905" y2="-2.775" width="0.2032" layer="21"/>
+<wire x1="-7.56" y1="4.5" x2="7.56" y2="4.5" width="0.2032" layer="21"/>
+<wire x1="7.56" y1="-4.5" x2="2.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-4.5" x2="-2.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="-4.5" x2="-7.56" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-7.56" y1="-4.5" x2="-7.56" y2="4.4" width="0.2032" layer="21"/>
+<wire x1="7.56" y1="4.5" x2="7.56" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-6.46" y1="-3.4" x2="-6.46" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="3.4" x2="6.46" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="6.46" y1="-3.4" x2="6.46" y2="3.4" width="0.2032" layer="51"/>
+<wire x1="-2.2" y1="-4.5" x2="-2.2" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="-3" x2="2.2" y2="-3" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-3" x2="2.2" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-6.46" y1="-3.4" x2="-2.2" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="6.46" y1="-3.4" x2="2.2" y2="-3.4" width="0.2032" layer="51"/>
+<wire x1="-7.56" y1="-4.5" x2="-7.56" y2="4.4" width="0.2032" layer="51"/>
+<wire x1="7.56" y1="4.5" x2="7.56" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="7.56" y1="-4.5" x2="-7.56" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-7.56" y1="4.5" x2="7.56" y2="4.5" width="0.2032" layer="51"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1"/>
+<pad name="3" x="0" y="-1.27" drill="1"/>
+<pad name="4" x="0" y="1.27" drill="1"/>
+<pad name="5" x="2.54" y="-1.27" drill="1"/>
+<pad name="6" x="2.54" y="1.27" drill="1"/>
+<text x="0" y="-5" size="1.27" layer="27" font="vector" ratio="18" align="top-center">ESPFlash</text>
+<text x="0" y="4.9" size="1.27" layer="104" font="vector" rot="R180" align="top-center">&gt;NAME</text>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+</package>
+<package name="2X3-2.54-PLAIN" urn="urn:adsk.eagle:footprint:12408515/4" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 2.54mm format, 1mm holes with no header</description>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="2.032" x2="-3.81" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="-3.81" y1="-2.032" x2="-3.302" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-3.302" y1="-2.54" x2="-1.778" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="-2.032" x2="-1.27" y2="2.032" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-1.778" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-1.778" y1="2.54" x2="-3.302" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-3.302" y1="2.54" x2="-3.81" y2="2.032" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-0.762" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="2.54" x2="0.762" y2="2.54" width="0.254" layer="51"/>
+<wire x1="0.762" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
+<wire x1="1.27" y1="2.032" x2="1.27" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="1.27" y1="-2.032" x2="0.762" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="0.762" y1="-2.54" x2="-0.762" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="1.27" y1="-2.032" x2="1.778" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="1.778" y1="-2.54" x2="3.302" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="3.302" y1="-2.54" x2="3.81" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="3.81" y1="-2.032" x2="3.81" y2="2.032" width="0.254" layer="51"/>
+<wire x1="3.81" y1="2.032" x2="3.302" y2="2.54" width="0.254" layer="51"/>
+<wire x1="3.302" y1="2.54" x2="1.778" y2="2.54" width="0.254" layer="51"/>
+<wire x1="1.778" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1"/>
+<pad name="3" x="0" y="-1.27" drill="1"/>
+<pad name="4" x="0" y="1.27" drill="1"/>
+<pad name="5" x="2.54" y="-1.27" drill="1"/>
+<pad name="6" x="2.54" y="1.27" drill="1"/>
+<text x="0" y="3" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.9" size="1.27" layer="27" font="vector" ratio="18" align="top-center">ESPFlash</text>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+<circle x="-3.81" y="-2.286" radius="0.254" width="0.4064" layer="51"/>
+</package>
+<package name="2X3-2.54-PINS" urn="urn:adsk.eagle:footprint:14369947/2" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 2.54mm format, 1mm holes with pin header</description>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="2.032" x2="-3.81" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="-3.81" y1="-2.032" x2="-3.302" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-3.302" y1="-2.54" x2="-1.778" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="-2.032" x2="-1.27" y2="2.032" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-1.778" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-1.778" y1="2.54" x2="-3.302" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-3.302" y1="2.54" x2="-3.81" y2="2.032" width="0.254" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-0.762" y2="2.54" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="2.54" x2="0.762" y2="2.54" width="0.254" layer="51"/>
+<wire x1="0.762" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
+<wire x1="1.27" y1="2.032" x2="1.27" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="1.27" y1="-2.032" x2="0.762" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="0.762" y1="-2.54" x2="-0.762" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="1.27" y1="-2.032" x2="1.778" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="1.778" y1="-2.54" x2="3.302" y2="-2.54" width="0.254" layer="51"/>
+<wire x1="3.302" y1="-2.54" x2="3.81" y2="-2.032" width="0.254" layer="51"/>
+<wire x1="3.81" y1="-2.032" x2="3.81" y2="2.032" width="0.254" layer="51"/>
+<wire x1="3.81" y1="2.032" x2="3.302" y2="2.54" width="0.254" layer="51"/>
+<wire x1="3.302" y1="2.54" x2="1.778" y2="2.54" width="0.254" layer="51"/>
+<wire x1="1.778" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="51"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1"/>
+<pad name="3" x="0" y="-1.27" drill="1"/>
+<pad name="4" x="0" y="1.27" drill="1"/>
+<pad name="5" x="2.54" y="-1.27" drill="1"/>
+<pad name="6" x="2.54" y="1.27" drill="1"/>
+<text x="0" y="3" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.9" size="1.27" layer="27" font="vector" ratio="18" align="top-center">ESPFlash</text>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+<circle x="-3.81" y="-2.286" radius="0.254" width="0.4064" layer="51"/>
+</package>
+<package name="1X6-1.27-PLAIN" urn="urn:adsk.eagle:footprint:14376550/5" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no header</description>
+<pad name="1" x="-3.175" y="0" drill="0.7" diameter="1.016" shape="octagon"/>
+<pad name="2" x="-1.905" y="0" drill="0.7" diameter="1.016"/>
+<pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
+<pad name="4" x="0.635" y="0" drill="0.7" diameter="1.016"/>
+<pad name="5" x="1.905" y="0" drill="0.7" diameter="1.016"/>
+<pad name="6" x="3.175" y="0" drill="0.7" diameter="1.016"/>
+<text x="0" y="1" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.016" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
+<rectangle x1="1.651" y1="-0.254" x2="2.159" y2="0.254" layer="51"/>
+<rectangle x1="0.381" y1="-0.254" x2="0.889" y2="0.254" layer="51"/>
+<rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
+<rectangle x1="-2.159" y1="-0.254" x2="-1.651" y2="0.254" layer="51"/>
+<rectangle x1="-3.429" y1="-0.254" x2="-2.921" y2="0.254" layer="51"/>
+<rectangle x1="2.921" y1="-0.254" x2="3.429" y2="0.254" layer="51"/>
+<wire x1="-3.81" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.67" x2="-3.81" y2="0.67" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.67" x2="-3.81" y2="-0.67" width="0.2032" layer="21"/>
+<wire x1="-3.845" y1="-0.635" x2="-3.845" y2="0.635" width="0.2032" layer="21"/>
+</package>
+<package name="1X6-1.27-SOCKET" urn="urn:adsk.eagle:footprint:14376549/5" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with socket</description>
+<pad name="1" x="-3.175" y="0" drill="0.7" diameter="1.016" shape="octagon"/>
+<pad name="2" x="-1.905" y="0" drill="0.7" diameter="1.016"/>
+<pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
+<pad name="4" x="0.635" y="0" drill="0.7" diameter="1.016"/>
+<pad name="5" x="1.905" y="0" drill="0.7" diameter="1.016"/>
+<pad name="6" x="3.175" y="0" drill="0.7" diameter="1.016"/>
+<text x="0" y="1" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.016" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
+<rectangle x1="1.651" y1="-0.254" x2="2.159" y2="0.254" layer="51"/>
+<rectangle x1="0.381" y1="-0.254" x2="0.889" y2="0.254" layer="51"/>
+<rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
+<rectangle x1="-2.159" y1="-0.254" x2="-1.651" y2="0.254" layer="51"/>
+<rectangle x1="-3.429" y1="-0.254" x2="-2.921" y2="0.254" layer="51"/>
+<rectangle x1="2.921" y1="-0.254" x2="3.429" y2="0.254" layer="51"/>
+<wire x1="-3.81" y1="0.635" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.67" x2="-3.81" y2="0.67" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.67" x2="-3.81" y2="-0.67" width="0.2032" layer="21"/>
+<wire x1="-3.845" y1="-0.635" x2="-3.845" y2="0.635" width="0.2032" layer="21"/>
+</package>
+<package name="2X3-1.27-PINS" urn="urn:adsk.eagle:footprint:14377572/3" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with pin header</description>
+<pad name="1" x="-1.27" y="-0.635" drill="0.7" diameter="1.016" shape="octagon"/>
+<pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.016"/>
+<pad name="3" x="0" y="-0.635" drill="0.7" diameter="1.016"/>
+<pad name="4" x="0" y="0.635" drill="0.7" diameter="1.016"/>
+<pad name="5" x="1.27" y="-0.635" drill="0.7" diameter="1.016"/>
+<pad name="6" x="1.27" y="0.635" drill="0.7" diameter="1.016"/>
+<text x="0" y="1.5" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.5" size="1.27" layer="27" font="vector" ratio="18" align="top-center">ESPFlash</text>
+<rectangle x1="-1.524" y1="0.381" x2="-1.016" y2="0.889" layer="51"/>
+<rectangle x1="-0.254" y1="0.381" x2="0.254" y2="0.889" layer="51"/>
+<rectangle x1="-0.254" y1="-0.889" x2="0.254" y2="-0.381" layer="51"/>
+<rectangle x1="1.016" y1="0.381" x2="1.524" y2="0.889" layer="51"/>
+<rectangle x1="1.016" y1="-0.889" x2="1.524" y2="-0.381" layer="51"/>
+<circle x="-1.27" y="-0.635" radius="0.254" width="0.4064" layer="51"/>
+<wire x1="-1.905" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+</package>
+<package name="2X3-1.27-PLAIN" urn="urn:adsk.eagle:footprint:14377919/2" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with no header</description>
+<pad name="1" x="-1.27" y="-0.635" drill="0.7" diameter="1.016" shape="octagon"/>
+<pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.016"/>
+<pad name="3" x="0" y="-0.635" drill="0.7" diameter="1.016"/>
+<pad name="4" x="0" y="0.635" drill="0.7" diameter="1.016"/>
+<pad name="5" x="1.27" y="-0.635" drill="0.7" diameter="1.016"/>
+<pad name="6" x="1.27" y="0.635" drill="0.7" diameter="1.016"/>
+<text x="0" y="1.5" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.5" size="1.27" layer="27" font="vector" ratio="18" align="top-center">ESPFlash</text>
+<rectangle x1="-1.524" y1="0.381" x2="-1.016" y2="0.889" layer="51"/>
+<rectangle x1="-0.254" y1="0.381" x2="0.254" y2="0.889" layer="51"/>
+<rectangle x1="-0.254" y1="-0.889" x2="0.254" y2="-0.381" layer="51"/>
+<rectangle x1="1.016" y1="0.381" x2="1.524" y2="0.889" layer="51"/>
+<rectangle x1="1.016" y1="-0.889" x2="1.524" y2="-0.381" layer="51"/>
+<circle x="-1.27" y="-0.635" radius="0.254" width="0.4064" layer="51"/>
+<wire x1="-1.905" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+</package>
+<package name="2X3-1.27-SHROUDED" urn="urn:adsk.eagle:footprint:14377918/3" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with shrouded header</description>
+<wire x1="-1.905" y1="-1.505" x2="-0.635" y2="-1.505" width="0.2032" layer="21"/>
+<wire x1="-5.005" y1="2.5" x2="5.005" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="5.005" y1="-2.5" x2="2.2" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-2.5" x2="-2.2" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="-2.5" x2="-5.005" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-5.005" y1="-2.5" x2="-5.005" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="5.005" y1="2.5" x2="5.005" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-4.555" y1="-1.7" x2="-4.555" y2="1.7" width="0.2032" layer="51"/>
+<wire x1="-4.555" y1="1.7" x2="4.555" y2="1.7" width="0.2032" layer="51"/>
+<wire x1="4.555" y1="-1.7" x2="4.555" y2="1.7" width="0.2032" layer="51"/>
+<wire x1="-2.2" y1="-2.5" x2="-2.2" y2="-1.73" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="-1.73" x2="2.2" y2="-1.73" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-1.73" x2="2.2" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-4.555" y1="-1.7" x2="-2.2" y2="-1.7" width="0.2032" layer="51"/>
+<wire x1="4.555" y1="-1.7" x2="2.2" y2="-1.7" width="0.2032" layer="51"/>
+<wire x1="-5.005" y1="-2.5" x2="-5.005" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="5.005" y1="2.5" x2="5.005" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-5.005" y1="2.5" x2="5.005" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="5.005" y1="-2.5" x2="-5.005" y2="-2.5" width="0.2032" layer="51"/>
+<pad name="1" x="-1.27" y="-0.635" drill="0.7" diameter="1.016" shape="octagon"/>
+<pad name="2" x="-1.27" y="0.635" drill="0.7" diameter="1.016"/>
+<pad name="3" x="0" y="-0.635" drill="0.7" diameter="1.016"/>
+<pad name="4" x="0" y="0.635" drill="0.7" diameter="1.016"/>
+<pad name="5" x="1.27" y="-0.635" drill="0.7" diameter="1.016"/>
+<pad name="6" x="1.27" y="0.635" drill="0.7" diameter="1.016"/>
+<text x="0" y="-2.7" size="1.27" layer="27" font="vector" ratio="18" align="top-center">ESPFlash</text>
+<text x="0" y="2.7" size="1.27" layer="104" font="vector" rot="R180" align="top-center">&gt;NAME</text>
+<rectangle x1="-1.524" y1="-0.889" x2="-1.016" y2="-0.381" layer="51"/>
+<rectangle x1="-1.524" y1="0.381" x2="-1.016" y2="0.889" layer="51"/>
+<rectangle x1="-0.254" y1="0.381" x2="0.254" y2="0.889" layer="51"/>
+<rectangle x1="-0.254" y1="-0.889" x2="0.254" y2="-0.381" layer="51"/>
+<rectangle x1="1.016" y1="0.381" x2="1.524" y2="0.889" layer="51"/>
+<rectangle x1="1.016" y1="-0.889" x2="1.524" y2="-0.381" layer="51"/>
+</package>
+<package name="1X6-2.54-SOCKET-RA" urn="urn:adsk.eagle:footprint:20479882/2" library_version="11">
 <description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
 <wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
@@ -2079,7 +2040,7 @@ Free for use for any purpose.</description>
 <pad name="5" x="3.81" y="0" drill="1"/>
 <pad name="6" x="6.35" y="0" drill="1"/>
 <text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
@@ -2087,8 +2048,8 @@ Free for use for any purpose.</description>
 <rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 </package>
-<package name="1X6-1.27-PINS-RA" urn="urn:adsk.eagle:footprint:20496567/1" library_version="43">
-<description>ESP-Prog Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no right angle pin header</description>
+<package name="1X6-1.27-PINS-RA" urn="urn:adsk.eagle:footprint:20496567/2" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no right angle pin header</description>
 <pad name="1" x="-3.175" y="0" drill="0.7" diameter="1.016" shape="octagon"/>
 <pad name="2" x="-1.905" y="0" drill="0.7" diameter="1.016"/>
 <pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
@@ -2096,7 +2057,7 @@ Free for use for any purpose.</description>
 <pad name="5" x="1.905" y="0" drill="0.7" diameter="1.016"/>
 <pad name="6" x="3.175" y="0" drill="0.7" diameter="1.016"/>
 <text x="0" y="1" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="1.016" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
+<text x="0" y="-1.905" size="1.016" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
 <rectangle x1="1.651" y1="-0.254" x2="2.159" y2="0.254" layer="51"/>
 <rectangle x1="0.381" y1="-0.254" x2="0.889" y2="0.254" layer="51"/>
 <rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
@@ -2130,94 +2091,88 @@ Free for use for any purpose.</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="HDRVR6W64P254_1X6_1524X254X860C" urn="urn:adsk.eagle:package:12469082/7" type="model" library_version="34">
-<description>Single-row, 6-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 8.60 mm insulator length, 15.24 X 2.54 X 8.60 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 8.60 mm insulator length with overall size 15.24 X 2.54 X 8.60 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="1X6-2.54-SOCKET"/>
-</packageinstances>
-</package3d>
-<package3d name="1X6-2.54-PTH" urn="urn:adsk.eagle:package:14353675/6" type="empty" library_version="34">
-<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with no header</description>
-<packageinstances>
-<packageinstance name="1X6-2.54-PLAIN"/>
-</packageinstances>
-</package3d>
-<package3d name="2X03-SHROUDED" urn="urn:adsk.eagle:package:13425426/6" type="model" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 2.54mm format, 1mm holes with shrouded header</description>
-<packageinstances>
-<packageinstance name="2X3-2.54-SHROUDED"/>
-</packageinstances>
-</package3d>
-<package3d name="2X03" urn="urn:adsk.eagle:package:12408518/3" type="box" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 2.54mm format, 1mm holes with no header</description>
-<packageinstances>
-<packageinstance name="2X3-2.54-PLAIN"/>
-</packageinstances>
-</package3d>
-<package3d name="HDRV6W64P254_2X3_762X508X838C" urn="urn:adsk.eagle:package:14369948/2" type="model" library_version="34">
-<description>Double-row, 6-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 7.62 X 5.08 X 8.38 mm body
-&lt;p&gt;Double-row (2X3), 6-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 7.62 X 5.08 X 8.38 mm, pin pattern - zigzag from bottom left&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="2X3-2.54-PINS"/>
-</packageinstances>
-</package3d>
-<package3d name="1X6-1.27-PLAIN" urn="urn:adsk.eagle:package:14376555/5" type="empty" library_version="34">
-<description>ESP-Prog Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no header</description>
-<packageinstances>
-<packageinstance name="1X6-1.27-PLAIN"/>
-</packageinstances>
-</package3d>
-<package3d name="HDRVR6W64P127_1X6_762X127X430C" urn="urn:adsk.eagle:package:14376554/6" type="model" library_version="34">
-<description>Single-row, 6-pin Receptacle Header (Female) Straight, 1.27 mm (0.05 in) col pitch, 4.30 mm insulator length, 7.62 X 1.27 X 4.30 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Receptacle Header (Female) Straight package with 1.27 mm (0.05 in) col pitch, 0.64 mm lead width, 2.40 mm tail length and 4.30 mm insulator length with overall size 7.62 X 1.27 X 4.30 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="1X6-1.27-SOCKET"/>
-</packageinstances>
-</package3d>
-<package3d name="HDRV6W40P127_2X3_381X254X500C" urn="urn:adsk.eagle:package:14377573/3" type="model" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with pin header</description>
-<packageinstances>
-<packageinstance name="2X3-1.27-PINS"/>
-</packageinstances>
-</package3d>
-<package3d name="2X3-1.27-PLAIN" urn="urn:adsk.eagle:package:14377921/1" type="box" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with no header</description>
-<packageinstances>
-<packageinstance name="2X3-1.27-PLAIN"/>
-</packageinstances>
-</package3d>
-<package3d name="2X3-1.27-SHROUDED" urn="urn:adsk.eagle:package:14377920/2" type="model" library_version="34">
-<description>ESP-Prog Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with shrouded header</description>
-<packageinstances>
-<packageinstance name="2X3-1.27-SHROUDED"/>
-</packageinstances>
-</package3d>
-<package3d name="HDRRA6W64P254_1X6_1524X254X254C" urn="urn:adsk.eagle:package:20465662/6" type="model" library_version="43">
-<description>Single-row, 6-pin Pin Header (Male) Right Angle, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 15.24 X 2.54 X 2.54 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with body size 15.24 X 2.54 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package3d name="HDRRA6W64P254_1X6_1524X254X254C" urn="urn:adsk.eagle:package:20465662/7" type="model" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
 <packageinstances>
 <packageinstance name="1X6-2.54-PINS-RA"/>
 </packageinstances>
 </package3d>
-<package3d name="HDRRAR6W64P254_1X6_1524X736X278C" urn="urn:adsk.eagle:package:20479883/2" type="model" library_version="43">
-<description>Single-row, 6-pin Receptacle Header (Female) Right Angle, 2.54 mm (0.10 in) col pitch, 7.36 mm insulator length, 15.24 X 7.36 X 2.78 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Receptacle Header (Female) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 7.36 mm insulator length with body size 15.24 X 7.36 X 2.78 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package3d name="HDRVR6W64P254_1X6_1524X254X860C" urn="urn:adsk.eagle:package:12469082/8" type="model" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with socket</description>
+<packageinstances>
+<packageinstance name="1X6-2.54-SOCKET"/>
+</packageinstances>
+</package3d>
+<package3d name="1X6-2.54-PTH" urn="urn:adsk.eagle:package:14353675/7" type="empty" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with no header</description>
+<packageinstances>
+<packageinstance name="1X6-2.54-PLAIN"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03-SHROUDED" urn="urn:adsk.eagle:package:13425426/8" type="model" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 2.54mm format, 1mm holes with shrouded header</description>
+<packageinstances>
+<packageinstance name="2X3-2.54-SHROUDED"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03" urn="urn:adsk.eagle:package:12408518/5" type="empty" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 2.54mm format, 1mm holes with no header</description>
+<packageinstances>
+<packageinstance name="2X3-2.54-PLAIN"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRV6W64P254_2X3_762X508X838C" urn="urn:adsk.eagle:package:14369948/3" type="model" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 2.54mm format, 1mm holes with pin header</description>
+<packageinstances>
+<packageinstance name="2X3-2.54-PINS"/>
+</packageinstances>
+</package3d>
+<package3d name="1X6-1.27-PLAIN" urn="urn:adsk.eagle:package:14376555/6" type="empty" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no header</description>
+<packageinstances>
+<packageinstance name="1X6-1.27-PLAIN"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRVR6W64P127_1X6_762X127X430C" urn="urn:adsk.eagle:package:14376554/7" type="model" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with socket</description>
+<packageinstances>
+<packageinstance name="1X6-1.27-SOCKET"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRV6W40P127_2X3_381X254X500C" urn="urn:adsk.eagle:package:14377573/4" type="model" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with pin header</description>
+<packageinstances>
+<packageinstance name="2X3-1.27-PINS"/>
+</packageinstances>
+</package3d>
+<package3d name="2X3-1.27-PLAIN" urn="urn:adsk.eagle:package:14377921/3" type="empty" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with no header</description>
+<packageinstances>
+<packageinstance name="2X3-1.27-PLAIN"/>
+</packageinstances>
+</package3d>
+<package3d name="2X3-1.27-SHROUDED" urn="urn:adsk.eagle:package:14377920/4" type="model" library_version="11">
+<description>ESPFlash Programming Header: 2x3 @ 1.27mm format, 0.7mm holes with shrouded header</description>
+<packageinstances>
+<packageinstance name="2X3-1.27-SHROUDED"/>
+</packageinstances>
+</package3d>
+<package3d name="HDRRAR6W64P254_1X6_1524X736X278C" urn="urn:adsk.eagle:package:20479883/3" type="model" library_version="11">
+<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
 <packageinstances>
 <packageinstance name="1X6-2.54-SOCKET-RA"/>
 </packageinstances>
 </package3d>
-<package3d name="HDRRA6W40P127_1X6_762X100X140C" urn="urn:adsk.eagle:package:20496568/2" type="model" library_version="43">
-<description>Single-row, 6-pin Pin Header (Male) Right Angle, 1.27 mm (0.05 in) col pitch, 3.70 mm mating length, 7.62 X 1.00 X 1.40 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 1.27 mm (0.05 in) col pitch, 0.40 mm lead width, 3.00 mm tail length and 3.70 mm mating length with body size 7.62 X 1.00 X 1.40 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package3d name="HDRRA6W40P127_1X6_762X100X140C" urn="urn:adsk.eagle:package:20496568/3" type="model" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 1.27mm format, 0.7mm holes with no right angle pin header</description>
 <packageinstances>
 <packageinstance name="1X6-1.27-PINS-RA"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="ESP-PROG" urn="urn:adsk.eagle:symbol:14353674/4" library_version="37">
-<description>ESP-Prog Programming Header</description>
+<symbol name="ESPFLASH" urn="urn:adsk.eagle:symbol:23118251/5" library_version="11">
+<description>ESPFlash Programming Header</description>
 <wire x1="-7.62" y1="-9.398" x2="5.08" y2="-9.398" width="0.254" layer="94"/>
 <wire x1="5.08" y1="9.398" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-9.398" width="0.254" layer="94"/>
@@ -2229,19 +2184,19 @@ Free for use for any purpose.</description>
 <wire x1="3.429" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="3.429" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="3.429" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
-<text x="-1.27" y="-9.906" size="1.778" layer="96" font="vector" align="top-center">ESP-Prog</text>
+<text x="-1.27" y="-9.906" size="1.778" layer="96" font="vector" align="top-center">ESPFlash</text>
 <text x="-1.27" y="9.906" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0.762" y="-7.62" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">GND</text>
-<text x="-1.27" y="6.858" size="1.6764" layer="94" font="vector" ratio="20" align="bottom-center">ESP-Prog</text>
+<text x="-1.27" y="6.858" size="1.6764" layer="94" font="vector" ratio="20" align="bottom-center">ESPFlash</text>
 <text x="0.762" y="2.54" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">CH_EN</text>
 <text x="0.762" y="5.08" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">GPIO0</text>
 <text x="0.762" y="-2.54" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">ESP_RX</text>
 <text x="0.762" y="-5.08" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">ESP_TX</text>
-<text x="0.762" y="0" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">VDD</text>
+<text x="0.762" y="0" size="1.4224" layer="94" font="vector" ratio="16" align="center-right">3.3V</text>
 <pin name="CH_EN" x="7.62" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="ESP_RX" x="7.62" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="ESP_TX" x="7.62" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="VDD" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3.3V" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="GPIO0" x="7.62" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="GND" x="7.62" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <circle x="2.54" y="5.08" radius="0.889" width="0.127" layer="94"/>
@@ -2253,24 +2208,24 @@ Free for use for any purpose.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP-PROG" urn="urn:adsk.eagle:component:14353676/24" prefix="J" library_version="43">
-<description>&lt;b&gt;ESP-Prog&lt;/b&gt;&lt;br&gt;
-ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x6 and 2x3 formats, in 2.54mm (0.1") and 1.27mm (0.05") pitch.</description>
+<deviceset name="ESPFLASH" urn="urn:adsk.eagle:component:23118253/7" prefix="J" library_version="11">
+<description>&lt;b&gt;ESPFlash&lt;/b&gt;&lt;br&gt;
+ESPFlash programming header for ESP8266, ESP8285, and ESP32. Options for both 1x6 and 2x3 formats, in both 2.54mm (0.1") and 1.27mm (0.05") pitch.</description>
 <gates>
-<gate name="G$1" symbol="ESP-PROG" x="0" y="0"/>
+<gate name="G$1" symbol="ESPFLASH" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-1X6-2.54-SOCKET" package="1X6-2.54-SOCKET">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12469082/7"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12469082/8"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2278,15 +2233,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-1X6-2.54-PLAIN" package="1X6-2.54-PLAIN">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14353675/6"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14353675/7"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2294,15 +2249,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-2X3-2.54-SHROUDED" package="2X3-2.54-SHROUDED">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
 <connect gate="G$1" pin="CH_EN" pad="1"/>
 <connect gate="G$1" pin="ESP_RX" pad="5"/>
 <connect gate="G$1" pin="ESP_TX" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13425426/6"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13425426/8"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2310,15 +2265,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-2X3-2.54-PLAIN" package="2X3-2.54-PLAIN">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
 <connect gate="G$1" pin="CH_EN" pad="1"/>
 <connect gate="G$1" pin="ESP_RX" pad="5"/>
 <connect gate="G$1" pin="ESP_TX" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12408518/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12408518/5"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2326,15 +2281,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-2X3-2.54-PINS" package="2X3-2.54-PINS">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
 <connect gate="G$1" pin="CH_EN" pad="1"/>
 <connect gate="G$1" pin="ESP_RX" pad="5"/>
 <connect gate="G$1" pin="ESP_TX" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14369948/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14369948/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2342,15 +2297,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-1X6-1.27-PLAIN" package="1X6-1.27-PLAIN">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14376555/5"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14376555/6"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2358,15 +2313,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-1X6-1.27-SOCKET" package="1X6-1.27-SOCKET">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14376554/6"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14376554/7"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2374,15 +2329,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-2X3-1.27-PINS" package="2X3-1.27-PINS">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
 <connect gate="G$1" pin="CH_EN" pad="1"/>
 <connect gate="G$1" pin="ESP_RX" pad="5"/>
 <connect gate="G$1" pin="ESP_TX" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14377573/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14377573/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2390,15 +2345,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-2X3-1.27-PLAIN" package="2X3-1.27-PLAIN">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
 <connect gate="G$1" pin="CH_EN" pad="1"/>
 <connect gate="G$1" pin="ESP_RX" pad="5"/>
 <connect gate="G$1" pin="ESP_TX" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14377921/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14377921/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2406,15 +2361,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-2X3-1.27-SHROUDED" package="2X3-1.27-SHROUDED">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="2"/>
 <connect gate="G$1" pin="CH_EN" pad="1"/>
 <connect gate="G$1" pin="ESP_RX" pad="5"/>
 <connect gate="G$1" pin="ESP_TX" pad="3"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14377920/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14377920/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2422,15 +2377,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-1X6-2.54-PINS-RA" package="1X6-2.54-PINS-RA">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20465662/6"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20465662/7"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2438,15 +2393,15 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-1X6-2.54-SOCKET-RA" package="1X6-2.54-SOCKET-RA">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20479883/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20479883/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2454,15 +2409,89 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 </device>
 <device name="-1X6-1.27-PINS-RA" package="1X6-1.27-PINS-RA">
 <connects>
+<connect gate="G$1" pin="3.3V" pad="4"/>
 <connect gate="G$1" pin="CH_EN" pad="5"/>
 <connect gate="G$1" pin="ESP_RX" pad="3"/>
 <connect gate="G$1" pin="ESP_TX" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GPIO0" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20496568/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20496568/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SuperHouse-Symbols" urn="urn:adsk.eagle:library:13228893">
+<packages>
+<package name="FIDUCIAL-1X2.5" urn="urn:adsk.eagle:footprint:13228894/1" library_version="2">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1.5X3" urn="urn:adsk.eagle:footprint:13228896/1" library_version="2">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2" urn="urn:adsk.eagle:footprint:13228895/1" library_version="2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="FIDUCIAL-1X2.5" urn="urn:adsk.eagle:package:13228898/2" type="empty" library_version="2">
+<packageinstances>
+<packageinstance name="FIDUCIAL-1X2.5"/>
+</packageinstances>
+</package3d>
+<package3d name="FIDUCIAL-1.5X3" urn="urn:adsk.eagle:package:13228900/2" type="empty" library_version="2">
+<packageinstances>
+<packageinstance name="FIDUCIAL-1.5X3"/>
+</packageinstances>
+</package3d>
+<package3d name="FIDUCIAL-1X2" urn="urn:adsk.eagle:package:13228899/2" type="empty" library_version="2">
+<packageinstances>
+<packageinstance name="FIDUCIAL-1X2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="FIDUCIAL" urn="urn:adsk.eagle:symbol:13228897/1" library_version="2">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" urn="urn:adsk.eagle:component:13228901/2" library_version="2">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13228900/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13228899/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13228898/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2516,9 +2545,9 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 <part name="R9" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="5.1K"/>
 <part name="GND2" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="GND8" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
-<part name="FID1" library="freetronics" deviceset="FIDUCIAL" device="1X2.5"/>
-<part name="FID2" library="freetronics" deviceset="FIDUCIAL" device="1X2.5"/>
-<part name="J3" library="SuperHouse-ESP-Prog" library_urn="urn:adsk.eagle:library:14353672" deviceset="ESP-PROG" device="-1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/6"/>
+<part name="FID1" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" deviceset="FIDUCIAL" device="1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2"/>
+<part name="FID2" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" deviceset="FIDUCIAL" device="1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2"/>
+<part name="J3" library="SuperHouse-ESPFlash" library_urn="urn:adsk.eagle:library:23117902" deviceset="ESPFLASH" device="-1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/7"/>
 <part name="P+1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="3.3V" device=""/>
 <part name="GND9" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="J2" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="USB-C-16P" device="-16P" package3d_urn="urn:adsk.eagle:package:17045956/2"/>
@@ -2554,11 +2583,11 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 <wire x1="210.82" y1="78.74" x2="243.84" y2="78.74" width="0.4064" layer="97" style="longdash"/>
 <wire x1="243.84" y1="78.74" x2="243.84" y2="170.18" width="0.4064" layer="97" style="longdash"/>
 <wire x1="243.84" y1="170.18" x2="210.82" y2="170.18" width="0.4064" layer="97" style="longdash"/>
-<text x="12.7" y="165.1" size="2.54" layer="97">USB-C Connection</text>
-<text x="91.44" y="165.1" size="2.54" layer="97">USB-Serial Converter</text>
-<text x="175.26" y="165.1" size="2.54" layer="97">Auto Reset</text>
-<text x="215.9" y="165.1" size="2.54" layer="97">Prog Header</text>
-<text x="12.7" y="68.58" size="2.54" layer="97">3.3V Power Supply</text>
+<text x="10.16" y="165.1" size="2.54" layer="97">USB-C Connection</text>
+<text x="88.9" y="165.1" size="2.54" layer="97">USB-Serial Converter</text>
+<text x="172.72" y="165.1" size="2.54" layer="97">Auto Reset</text>
+<text x="213.36" y="165.1" size="2.54" layer="97">ESPFlash Header</text>
+<text x="10.16" y="68.58" size="2.54" layer="97">3.3V Power Supply</text>
 <wire x1="7.62" y1="73.66" x2="7.62" y2="17.78" width="0.4064" layer="97" style="longdash"/>
 <wire x1="7.62" y1="17.78" x2="81.28" y2="17.78" width="0.4064" layer="97" style="longdash"/>
 <wire x1="81.28" y1="17.78" x2="81.28" y2="73.66" width="0.4064" layer="97" style="longdash"/>
@@ -2870,7 +2899,7 @@ ESP-Prog programming header for ESP8266, ESP8285, and ESP32. Options for both 1x
 <pinref part="LED2" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="VDD"/>
+<pinref part="J3" gate="G$1" pin="3.3V"/>
 <wire x1="220.98" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
 <wire x1="218.44" y1="129.54" x2="218.44" y2="154.94" width="0.1524" layer="91"/>

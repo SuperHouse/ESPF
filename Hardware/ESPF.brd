@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -188,7 +188,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:swBH170zRHaojB2h5Vblyg" pcbguid="65d1a610-0e94-4f7e-955b-cbe41dc31425" lastpulledtime="" lastsyncedchangeguid="8f27d1c3-c2be-d358-18db-d89d43a70d9e" latestrevisionid="fcdf8aa0-1bba-404e-aedf-1c9e20859707" lastsyncedrevisionid="fcdf8aa0-1bba-404e-aedf-1c9e20859707" lastboardhashguid="c79eb5d4-1c34-d8a5-41d2-598309a68487" lastpushedtime="2020-05-26T02:52:23Z" linktopcb3d="%12"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:swBH170zRHaojB2h5Vblyg" pcbguid="" lastpulledtime="" lastsyncedchangeguid="8f27d1c3-c2be-d358-18db-d89d43a70d9e" latestrevisionid="91da5424-9410-462b-9c00-ecb5205e71c2" lastsyncedrevisionid="91da5424-9410-462b-9c00-ecb5205e71c2" lastboardhashguid="118d0222-e689-2150-c329-ce3e1fc67ca0" lastpushedtime="2021-03-05T03:46:09Z" linktopcb3d="true"/>
 <plain>
 <text x="10.25" y="18.55" size="1.2" layer="21" font="vector" ratio="18">superhouse.tv/espf</text>
 <text x="8.5" y="2.1636" size="1.2" layer="22" font="vector" ratio="15" rot="MR0">v3.0</text>
@@ -597,22 +597,15 @@ Source: http://www.farnell.com/datasheets/716597.pdf</description>
 </package3d>
 </packages3d>
 </library>
-<library name="freetronics">
-<packages>
-<package name="FIDUCIAL-1X2.5">
-<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
-</package>
-</packages>
-</library>
-<library name="SuperHouse-ESP-Prog" urn="urn:adsk.eagle:library:14353672">
-<description>ESP8266, ESP8285, and ESP32 programming and JTAG headers.&lt;br&gt;
-Created by Jonathan Oxer &lt;jon@oxer.com.au&gt; for SuperHouse Automation Pty Ltd.&lt;br&gt;
-Shrouded headers were designed in Fusion 360. Pin headers were generated in Eagle.&lt;br&gt;
+<library name="SuperHouse-ESPFlash" urn="urn:adsk.eagle:library:23117902">
+<description>ESP8266, ESP8285, and ESP32 programming and JTAG headers. 
+See https://www.superhouse.tv/espflash for more information. 
+Created by Jonathan Oxer for SuperHouse Automation Pty Ltd. 
+Shrouded headers were designed in Fusion 360. Pin headers were generated in Eagle. 
 Free for use for any purpose.</description>
 <packages>
-<package name="1X6-2.54-PINS-RA" urn="urn:adsk.eagle:footprint:20465656/3" library_version="37">
-<description>ESP-Prog Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
+<package name="1X6-2.54-PINS-RA" urn="urn:adsk.eagle:footprint:20465656/4" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
 <wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.2032" layer="21"/>
@@ -648,7 +641,7 @@ Free for use for any purpose.</description>
 <pad name="5" x="3.81" y="0" drill="1"/>
 <pad name="6" x="6.35" y="0" drill="1"/>
 <text x="0" y="1.8288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" font="vector" align="bottom-center">ESP-Prog</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="18" align="bottom-center">ESPFlash</text>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
@@ -658,11 +651,25 @@ Free for use for any purpose.</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="HDRRA6W64P254_1X6_1524X254X254C" urn="urn:adsk.eagle:package:20465662/6" type="model" library_version="43">
-<description>Single-row, 6-pin Pin Header (Male) Right Angle, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 15.24 X 2.54 X 2.54 mm body
-&lt;p&gt;Single-row (1X6), 6-pin Pin Header (Male) Right Angle package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with body size 15.24 X 2.54 X 2.54 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<package3d name="HDRRA6W64P254_1X6_1524X254X254C" urn="urn:adsk.eagle:package:20465662/7" type="model" library_version="11">
+<description>ESPFlash Programming Header: 1x6 @ 2.54mm format, 1mm holes with right angle pin header</description>
 <packageinstances>
 <packageinstance name="1X6-2.54-PINS-RA"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="SuperHouse-Symbols" urn="urn:adsk.eagle:library:13228893">
+<packages>
+<package name="FIDUCIAL-1X2.5" urn="urn:adsk.eagle:footprint:13228894/1" library_version="2">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="FIDUCIAL-1X2.5" urn="urn:adsk.eagle:package:13228898/2" type="empty" library_version="2">
+<packageinstances>
+<packageinstance name="FIDUCIAL-1X2.5"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -935,9 +942,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <attribute name="NAME" x="11.508" y="12.389" size="0.4064" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="10.0348" y="12.516" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="FID1" library="freetronics" package="FIDUCIAL-1X2.5" value="FIDUCIAL1X2.5" x="2.5" y="8.5" smashed="yes"/>
-<element name="FID2" library="freetronics" package="FIDUCIAL-1X2.5" value="FIDUCIAL1X2.5" x="21" y="16.5" smashed="yes"/>
-<element name="J3" library="SuperHouse-ESP-Prog" library_urn="urn:adsk.eagle:library:14353672" package="1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/6" value="ESP-PROG-1X6-2.54-PINS-RA" x="20.7" y="1.6" smashed="yes">
+<element name="FID1" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" package="FIDUCIAL-1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2" value="FIDUCIAL1X2.5" x="2.5" y="8.5" smashed="yes"/>
+<element name="FID2" library="SuperHouse-Symbols" library_urn="urn:adsk.eagle:library:13228893" package="FIDUCIAL-1X2.5" package3d_urn="urn:adsk.eagle:package:13228898/2" value="FIDUCIAL1X2.5" x="21" y="16.5" smashed="yes"/>
+<element name="J3" library="SuperHouse-ESPFlash" library_urn="urn:adsk.eagle:library:23117902" package="1X6-2.54-PINS-RA" package3d_urn="urn:adsk.eagle:package:20465662/7" value="ESPFLASH-1X6-2.54-PINS-RA" x="20.7" y="1.6" smashed="yes">
 <attribute name="NAME" x="20.7" y="3.4288" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="J2" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="USB-C-16P" package3d_urn="urn:adsk.eagle:package:17045956/2" value="USB-C-16P-16P" x="2" y="10" smashed="yes" rot="R270">
@@ -994,8 +1001,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <contactref element="VR1" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C2" pad="2"/>
-<wire x1="15.1" y1="9.75" x2="17.25" y2="9.75" width="0.254" layer="1"/>
-<wire x1="17.25" y1="9.75" x2="17.5" y2="9.5" width="0.254" layer="1"/>
+<wire x1="15.1" y1="9.75" x2="16.75" y2="9.75" width="0.254" layer="1"/>
 <wire x1="15.1" y1="9.75" x2="14.25" y2="9.75" width="0.254" layer="1"/>
 <wire x1="14.25" y1="9.75" x2="14" y2="10" width="0.254" layer="1"/>
 <contactref element="R8" pad="1"/>
@@ -1015,7 +1021,7 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <wire x1="7.095" y1="6.775" x2="7.095" y2="6.095" width="0.508" layer="1"/>
 <wire x1="6.68" y1="5.68" x2="6.18" y2="5.68" width="0.508" layer="1"/>
 <wire x1="7.095" y1="6.095" x2="6.68" y2="5.68" width="0.508" layer="1"/>
-<wire x1="17.5" y1="9.5" x2="17" y2="9" width="0" layer="19" extent="1-1"/>
+<wire x1="16.75" y1="9.75" x2="17" y2="9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D-">
 <contactref element="Z1" pad="2"/>
@@ -1293,15 +1299,11 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,dc24dbd4d6a3d153"/>
 <approved hash="1,20,7c244cd44da97d59"/>
 <approved hash="1,20,d86954995740dbb0"/>
-<approved hash="1,20,19fbb50bb71c1bec"/>
 <approved hash="1,20,dae556155614dae4"/>
-<approved hash="1,20,29fbed0bef002bf0"/>
-<approved hash="1,20,1a2bb6dbb7a41b54"/>
 <approved hash="1,20,276c8f9cb0a11851"/>
 <approved hash="1,20,981bb4ebb42a98da"/>
 <approved hash="1,20,5bb84a584b4b5aab"/>
 <approved hash="1,20,ca2b2edb2fa6cb56"/>
-<approved hash="1,20,2a2beedbefb82b48"/>
 <approved hash="1,20,9a19b6e9b72c9bdc"/>
 <approved hash="1,20,5fb84e5849ab584b"/>
 <approved hash="1,20,5fb9a059a7ab584b"/>
@@ -1309,19 +1311,9 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="1,20,081af4eaf42608d6"/>
 <approved hash="1,20,13e8a318a2bf124f"/>
 <approved hash="1,20,186ad09ad02e18de"/>
-<approved hash="1,20,9de6541656089ff8"/>
 <approved hash="1,20,a80c6cfc6f3cabcc"/>
 <approved hash="1,20,ed8ed17ed73eebce"/>
 <approved hash="1,20,dae8f218f144d9b4"/>
-<approved hash="19,1,8f0c8e9a12e61370"/>
-<approved hash="19,1,4f054e95c2e9c379"/>
-<approved hash="19,1,89bc8b1a176615c0"/>
-<approved hash="19,1,49b54b15c769c5c9"/>
-<approved hash="19,16,35173b4751455f15"/>
-<approved hash="19,16,651f6b4711451f1d"/>
-<approved hash="19,16,34d736b75cb55ed5"/>
-<approved hash="19,16,64df66b71cb51edd"/>
-<approved hash="23,1,fc7d20210383059c"/>
 <approved hash="3,1,fde3300e300ffde2"/>
 <approved hash="3,1,0ae1470c470d0ae0"/>
 <approved hash="3,1,9bfcd611d6129bff"/>
@@ -1346,6 +1338,8 @@ These rules have been set to have limits that are safe for most board fabs, whil
 <approved hash="3,1,ef6d23782379ef6c"/>
 <approved hash="3,1,9c451c46680ee80d"/>
 <approved hash="3,1,95f015f363bbe3b8"/>
+<approved hash="1,20,a7e46c146e05a5f5"/>
+<approved hash="21,19,4f14b316b3e8b217"/>
 </errors>
 </board>
 </drawing>
