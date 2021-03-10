@@ -8,8 +8,9 @@ programming mode.
 
 ![ESP Flasher PCB render](Images/ESPF-v3_0-oblique-render.jpg)
 
-The pinout is compatible with the "ESPFlash" header convention designed
-by Jonathan Oxer.
+The pinout is compatible with the "ESPFlash" header convention:
+
+  https://www.superhouse.tv/espflash
 
 Features:
 
@@ -21,7 +22,7 @@ Features:
 
 You can view more details at:
 
-  http://www.superhouse.tv/espf
+  https://www.superhouse.tv/espf
 
 
 Credits
