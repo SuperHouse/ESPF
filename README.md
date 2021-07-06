@@ -6,7 +6,7 @@ a USB-C connection. Provides a 6-pin connection that includes power,
 TX, RX, and the GPIO0 / Reset lines required to put the ESPx into
 programming mode.
 
-![ESP Flasher PCB render](Images/ESPF-v3_0-oblique-render.jpg)
+![ESP Flasher PCB render](Images/ESPF-v3_2-oblique-render.jpg)
 
 The pinout is compatible with the "ESPFlash" header convention:
 
